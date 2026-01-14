@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import YouTube from "react-youtube";
 import { UserAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
-
+import MoreReason from "./MoreReason";
 const trendingMovies = [
   {
     id: 1,
@@ -70,8 +70,7 @@ export default function TrendingNow() {
   const scrollRef = useRef(null);
   const { user } = UserAuth();
   const navigate = useNavigate();
-  const [trailerId, setTrailerId] = useState("");
-
+  const [trailerId, setTrailerId] = useState("")
   const scroll = (direction) => {
     const { current } = scrollRef;
     if (direction === "left") {
@@ -182,6 +181,7 @@ export default function TrendingNow() {
           </div>
         </div>
       )}
+      <MoreReason/>
     </div>
   );
 }

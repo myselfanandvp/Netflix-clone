@@ -20,7 +20,7 @@ export default function Navbar() {
       <Link to='/'>
         <div className="flex items-center shrink-0">
           <svg
-            className="h-[20px] w-auto fill-[#e50914] md:h-[32px]"
+            className="h-5 w-auto fill-[#e50914] md:h-8"
             viewBox="0 0 111 30"
             aria-hidden="true"
           >
